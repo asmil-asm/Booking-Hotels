@@ -1,0 +1,11 @@
+@import "tailwindcss";
+/* global */
+*{
+    @apply box-border m-0 p-0
+}
+ul{
+    @apply list-none
+}
+button{
+    @apply cursor-pointer
+}

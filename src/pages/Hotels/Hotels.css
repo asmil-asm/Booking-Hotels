@@ -1,0 +1,121 @@
+@import "tailwindcss";
+.main{
+    @apply p-3   mt-[100px]  relative
+}
+.main h1{
+    @apply text-blue-950 text-2xl text-center  font-bold
+}
+.main section{
+@apply  flex justify-around mt-15 gap-5
+}
+
+
+.main .filter{
+    @apply border-1 border-blue-950 w-[20%] h-fit rounded-2xl p-4
+    pb-8 hidden lg:block
+    
+}
+.main .filter h3{
+    @apply text-blue-950 text-xl font-[500] mt-5
+}
+.main .filter .search{
+    @apply outline-none border-1 border-blue-950 w-full p-2 rounded-xl
+    mt-4
+}
+.main .filter .filter-data{
+    @apply flex gap-3 items-center mt-5
+}
+.main .filter  .icons{
+    @apply  gap-2  float-left
+}
+.main .filter .stars{
+    @apply text-amber-300 
+}
+.main .filter .filter-data label{
+    @apply text-[18px] 
+}
+
+.main .hotels{ 
+    @apply flex flex-col gap-4  
+     
+}
+.main .hotels .hotel{
+    @apply bg-[#EEEE] p-3 rounded-xl flex justify-between gap-6 items-center
+     duration-400 hover:-translate-y-1   flex-col lg:flex-row
+}
+.main .hotels .hotel .data{
+    @apply relative
+}
+.main .hotels .hotel  img{
+    @apply h-[300px] rounded-2xl w-[400px]
+}
+.main .hotels .hotel .data h2{
+    @apply text-2xl text-blue-950 font-bold
+}
+.main .hotels .hotel .data p{
+    @apply text-[15px] text-gray-700 flex items-center mt-3
+}
+.main .hotels .hotel .data .aminities
+{
+    @apply relative
+}
+.main .hotels .hotel .data .aminities h4{
+    @apply text-black text-[18px] mt-5 cursor-pointer mb-3
+}
+.main .hotels .hotel .data .aminities ul{
+    @apply flex bg-white p-3 flex-wrap rounded-xl gap-1 hidden
+}
+.main .hotels .hotel .data .aminities ul li{
+    @apply text-[15px] text-gray-800 
+}
+
+.main .hotels .hotel .data h4{
+    @apply text-xl font-bold text-blue-300 mt-[3]
+}
+.main .hotels .hotel .data h4 span{
+    @apply text-black text-[15px]
+}
+.main .hotels .hotel .data .stars{
+    @apply flex items-center text-yellow-300 mt-3
+}
+.main .hotels .hotel button{
+    padding: 5px 15px;
+    @apply  bg-blue-950 text-white text-[15px]
+    font-bold rounded-xl bottom-4  absolute right-1 hover:bg-blue-900
+}
+/* Mobile */
+.filterIcons{
+    padding:5px 15px;
+    @apply bg-blue-400 text-white text-xl fixed
+   left-[50%] bottom-1 gap-1 lg:hidden  rounded-2xl  flex items-center cursor-pointer  
+sm:visible -translate-x-[50%]
+}
+.filterMobiel{
+    @apply fixed   bg-white 
+     bottom-1 w-full  p-6 left-0 lg:hidden
+
+}
+.filterMobiel .filtering{
+    @apply gap-x-2 flex  justify-around items-center 
+}
+.filterMobiel h3{
+        @apply text-blue-950 text-xl font-[500] mt-2
+}
+
+.filterMobiel .search{
+      @apply outline-none border-1 border-blue-950 w-full p-2 rounded-xl
+    mt-4 
+}
+.filterMobiel .iconsMobile{
+    @apply  float-left
+}
+.filterMobiel .iconsMobile .stars{
+        @apply text-amber-300 
+}
+.filterMobiel .filter-data{
+    @apply   gap-x-3 flex 
+}
+.filterMobiel button{
+    @apply bg-blue-950 text-[15px] p-1 rounded-xl text-white w-full hover:bg-blue-900
+}
+

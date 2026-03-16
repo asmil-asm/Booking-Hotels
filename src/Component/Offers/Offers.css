@@ -1,0 +1,42 @@
+@import "tailwindcss";
+.Offers{
+    @apply mt-[100px] p-5;
+}
+.Offers h2{
+    @apply text-4xl text-blue-950 font-bold mb-7  text-center
+}
+ .Offers .cards{
+    
+    @apply grid gap-5 mt-[50px] lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1
+}
+  .Offers .cards .card{
+    @apply  rounded-2xl duration-500 shadow-xl hover:-translate-y-2 
+}
+ .Offers .cards .card img{
+    @apply w-full rounded-2xl
+}
+  .Offers .cards .card .info{
+    @apply text-center mt-2
+}
+  .Offers .cards .card .info h3{
+    @apply text-xl font-[700] text-[#333]
+}
+  .Offers .cards .card .info p{
+    @apply text-[15px] text-[#555] p-1
+}
+  .Offers .cards .card .info .date{
+    @apply  text-[18px] text-[#555] mt-3 font-[500]
+}
+.view-offer {
+    @apply flex justify-between items-center p-4
+}
+.view-offer span{
+    @apply text-blue-400
+}
+.view-offer button{
+    padding: 5px 10px;
+    @apply rounded-xl text-white   text-[15px] bg-blue-950
+    hover:bg-blue-950/[80%]
+    
+
+}

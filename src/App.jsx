@@ -1,0 +1,28 @@
+import Home from "./pages/Home/Home"
+import Header from "./Component/Header/Header"
+import { Routes ,Route } from "react-router-dom"
+import Footer from "./Component/Footer/footer"
+import About from "./pages/About/About"
+import  {Contact}  from "./pages/Contact/Contact"
+import Hotels from "./pages/Hotels/Hotels"
+import HotelData from "./pages/HotelData/HotelData"
+function App() {
+
+  return (
+    <div >
+    <Header/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about-us" element={<About/>}/>
+      <Route path="/contact-us" element={<Contact/>}/>
+      <Route path="/hotels" element={<Hotels/>}/>
+      <Route path="/hotel/:id" element={<HotelData/>}/>
+      
+    </Routes>
+    <Footer/>
+    
+    </div>
+  )
+}
+
+export default App

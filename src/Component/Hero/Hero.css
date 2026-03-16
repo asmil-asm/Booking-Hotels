@@ -1,0 +1,82 @@
+@import "tailwindcss";
+/* full screen */
+ .image-home{
+    background-image: url('../../assets/Home/hero.png');
+    background-size: cover;
+    @apply relative w-full pt-4 pb-4
+}
+
+.image-home .shadow{
+    @apply absolute w-full top-0 left-0
+    bg-black/30 h-full
+
+}
+.hero-data{
+    @apply relative  
+}
+.image-home  .home-text {
+    @apply p-5 mt-[200px]
+}
+ .image-home .home-text h2{
+    @apply font-bold text-4xl mb-3 text-white
+}
+.home .image-home  .home-text p{
+    @apply text-[20px] text-[#EEE]
+}
+.home .image-home .home-text button{
+   @apply  bg-blue-900 text-white
+    rounded-2xl p-2
+    cursor-pointer mt-9
+}
+form {
+  @apply bg-white/80 text-black p-4 sm:p-5 rounded-2xl mt-5 
+         w-[95%] sm:w-[85%] md:w-[700px] lg:w-[800px]
+         min-h-fit m-auto shadow-lg;
+}
+
+form h3 {
+  @apply text-blue-950 font-bold text-xl sm:text-2xl mb-4;
+}
+
+form label {
+  @apply text-gray-900 text-sm sm:text-base;
+}
+
+form input {
+  @apply outline-none border border-gray-400 focus:border-blue-950
+         w-full mt-2 mb-4 p-2 rounded-xl bg-white;
+}
+
+form .destination {
+  @apply w-full;
+}
+
+form .info {
+  @apply flex flex-col md:flex-row gap-4 md:gap-6 mt-4;
+}
+
+form .data {
+  @apply flex-1;
+}
+
+form button {
+  @apply mt-3 bg-blue-950 rounded-xl px-5 py-2 text-white
+         w-full md:w-fit hover:opacity-90 transition;
+}
+
+
+
+
+
+/* Mobiles */
+.image-home  .home-text {
+    @apply max-sm:text-center
+}
+ .image-home .home-text h2{
+    @apply max-sm:text-xl
+}
+.image-home .home-text p{
+        @apply max-sm:text-[15px]
+
+}
+   
