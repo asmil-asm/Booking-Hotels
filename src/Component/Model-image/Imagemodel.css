@@ -6,7 +6,7 @@
 }
  .moudel span{
     padding:5px 10px;
-    @apply rounded-xl bg-blue-950 text-white font-bold text-center cursor-pointer
+    @apply rounded-xl bg-blue-950 text-white font-bold text-center cursor-pointer 
 }
  .moudel .allImages {
     @apply flex gap-x-4 

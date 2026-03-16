@@ -25,11 +25,9 @@
 .main .filter .filter-data{
     @apply flex gap-3 items-center mt-5
 }
-.main .filter  .icons{
-    @apply  gap-2  float-left
-}
+
 .main .filter .stars{
-    @apply text-amber-300 
+    @apply text-amber-300  gap-2  float-left
 }
 .main .filter .filter-data label{
     @apply text-[18px] 
@@ -63,10 +61,10 @@
     @apply text-black text-[18px] mt-5 cursor-pointer mb-3
 }
 .main .hotels .hotel .data .aminities ul{
-    @apply flex bg-white p-3 flex-wrap rounded-xl gap-1 hidden
+    @apply flex  p-3 flex-wrap rounded-xl gap-1
 }
 .main .hotels .hotel .data .aminities ul li{
-    @apply text-[15px] text-gray-800 
+    @apply text-[15px] text-blue-300 font-[500] ml-4
 }
 
 .main .hotels .hotel .data h4{
@@ -92,7 +90,7 @@ sm:visible -translate-x-[50%]
 }
 .filterMobiel{
     @apply fixed   bg-white 
-     bottom-1 w-full  p-6 left-0 lg:hidden
+     bottom-1 w-full  p-6 left-0 lg:hidden overflow-y-auto h-[400px]
 
 }
 .filterMobiel .filtering{
@@ -109,13 +107,14 @@ sm:visible -translate-x-[50%]
 .filterMobiel .iconsMobile{
     @apply  float-left
 }
-.filterMobiel .iconsMobile .stars{
-        @apply text-amber-300 
+.filterMobiel .stars-label .stars{
+        @apply text-yellow-300 gap-2  float-left
 }
+
 .filterMobiel .filter-data{
     @apply   gap-x-3 flex 
 }
 .filterMobiel button{
-    @apply bg-blue-950 text-[15px] p-1 rounded-xl text-white w-full hover:bg-blue-900
+    @apply bg-blue-950 text-[15px] p-1 rounded-xl text-white w-full hover:bg-blue-900 mt-2
 }
 

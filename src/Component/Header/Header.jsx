@@ -22,9 +22,9 @@ const Header = () => {
 </div>
  <ul className="full-screen">
     <NavLink to={'/Booking-Hotels'}><li>Home</li></NavLink>
-    <NavLink to= {'/hotels'}><li>Hotels</li></NavLink>
-    <NavLink to={'/about-us'}><li>About</li></NavLink>
-    <NavLink to={'/contact-us'}><li>Contact</li></NavLink>
+    <NavLink to= {'/Booking-Hotels/hotels'}><li>Hotels</li></NavLink>
+    <NavLink to={'/Booking-Hotels/about-us'}><li>About</li></NavLink>
+    <NavLink to={'/Booking-Hotels/contact-us'}><li>Contact</li></NavLink>
 </ul>
 <div className='buttons'>
     <select value={language} onChange={handleLanguage}>
@@ -44,10 +44,10 @@ const Header = () => {
     <IoMdMenu onClick={handleMenu} className="menu"/>
    {menu&& <div className="list">
  <ul>
-    <NavLink to={'/Booking-Hotels'}><li>Home</li></NavLink>
-    <NavLink to= {'/hotels'}><li>Hotels</li></NavLink>
-    <NavLink to={'/about-us'}><li>About</li></NavLink>
-    <NavLink to={'/contact-us'}><li>Contact</li></NavLink>
+ <NavLink to={'/Booking-Hotels'}><li>Home</li></NavLink>
+    <NavLink to= {'/Booking-Hotels/hotels'}><li>Hotels</li></NavLink>
+    <NavLink to={'/Booking-Hotels/about-us'}><li>About</li></NavLink>
+    <NavLink to={'/Booking-Hotels/contact-us'}><li>Contact</li></NavLink>
 </ul>
 <div className="btns">
         <motion.button whileTap={{scale:0.8}}>Singin</motion.button>

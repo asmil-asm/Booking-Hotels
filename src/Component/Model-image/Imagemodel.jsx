@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { Usedata } from "../../Context/ContextComponent"
 import './Imagemodel.css'
 const Imagemodel = () => {
-    const {images,setImages,showPhoto,setShowPhoto}=Usedata();
+    const {images,setImages,setShowPhoto}=Usedata();
     const {id}=useParams();
 const hotel=hotels.find((hotel)=>hotel.id==id)
     const  handleImages=()=>{

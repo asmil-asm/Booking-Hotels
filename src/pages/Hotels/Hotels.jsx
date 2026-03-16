@@ -93,7 +93,6 @@ const Hotels = () => {
     setFilteredHotels(result);
   }, [filters]);
 
-  // مكون Checkbox المحسن
   let Checkbox = ({ label, type, value, checked }) => (
     <div className='filter-data'>
       <input 
@@ -105,7 +104,6 @@ const Hotels = () => {
     </div>
   )
 
-  // مكون Checkbox للنجوم
   let StarCheckbox = ({ rating, checked }) => (
     <div className='filter-data'>
       <input 
@@ -252,7 +250,7 @@ const Hotels = () => {
                     <FaStar key={index}/>
                   ))}
                 </div>
-                <button onClick={() => navigate(`/hotel/${hotel.id}`)}>View</button>
+                <button onClick={() => navigate(`/Booking-Hotels/hotel/${hotel.id}`)}>View</button>
               </div>
             </div>
           )) : (
@@ -283,7 +281,7 @@ const Hotels = () => {
               
               <h3>Star rating</h3>
               {filterOptions.rate.map((num, index) => (
-                <StarCheckbox 
+                <StarCheckbox
                   key={`mobile-${index}`} 
                   rating={num}
                   checked={filters.ratings.includes(num)}

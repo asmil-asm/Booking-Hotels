@@ -3,7 +3,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
-
 import './Footer.css'
 import { Link } from "react-router-dom";
 
@@ -19,9 +18,9 @@ const footer = () => {
         <h3>Quick Links</h3>
  <ul>
           <Link to='/Booking-Hotels'><li>Home</li></Link>
-          <Link to='/about-us'><li>About Us</li></Link>
-          <Link to='/hotels'><li>Hotels</li></Link>      
-             <Link to='/contact-us'><li>Contact</li></Link>   
+          <Link to='/Booking-Hotels/about-us'><li>About Us</li></Link>
+          <Link to='/Booking-Hotels/hotels'><li>Hotels</li></Link>      
+             <Link to='/Booking-Hotels/contact-us'><li>Contact</li></Link>   
             </ul>
     </div>
 <div className="social">
