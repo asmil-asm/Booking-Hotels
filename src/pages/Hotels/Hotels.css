@@ -25,7 +25,9 @@
 .main .filter .filter-data{
     @apply flex gap-3 items-center mt-5
 }
-
+.main .filter .filter-data input{
+    @apply cursor-pointer
+}
 .main .filter .stars{
     @apply text-amber-300  gap-2  float-left
 }

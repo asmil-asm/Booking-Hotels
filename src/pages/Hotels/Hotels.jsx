@@ -53,7 +53,7 @@ const Hotels = () => {
   useEffect(() => {
     let result = [...hotels];
     
-    // فلتر البحث
+    // filtring search
     if (filters.search) {
       result = result.filter(hotel => 
         hotel.name.toLowerCase().includes(filters.search.toLowerCase()) ||
@@ -61,19 +61,19 @@ const Hotels = () => {
       );
     }
     
-    // فلتر التقييم
+    // filtring rating
     if (filters.ratings.length > 0) {
       result = result.filter(hotel => filters.ratings.includes(hotel.rate));
     }
     
-    // فلتر الموقع
+    // filtring location
     if (filters.locations.length > 0) {
       result = result.filter(hotel => 
         filters.locations.some(loc => hotel.location.includes(loc))
       );
     }
     
-    // فلتر السعر
+    // filtring price
     if (filters.price) {
       switch(filters.price) {
         case 'Price Low to Height':
@@ -92,7 +92,7 @@ const Hotels = () => {
     
     setFilteredHotels(result);
   }, [filters]);
-
+// filtring checkbox
   let Checkbox = ({ label, type, value, checked }) => (
     <div className='filter-data'>
       <input 
@@ -103,7 +103,7 @@ const Hotels = () => {
       <label>{label}</label>
     </div>
   )
-
+// filtring stars
   let StarCheckbox = ({ rating, checked }) => (
     <div className='filter-data'>
       <input 
@@ -118,8 +118,7 @@ const Hotels = () => {
       </label>
     </div>
   )
-
-  // مكون Radio المحسن
+ // radio filtering
   let Radio = ({ label, type, value, checked, name }) => (
     <div className='filter-data'>
       <input 
@@ -137,7 +136,7 @@ const Hotels = () => {
     setShowFilter(!showFilter);
   }
   
-  // دالة إعادة تعيين الفلتر
+  // filtring function
   const resetFilters = () => {
     setFilters({
       search: '',
