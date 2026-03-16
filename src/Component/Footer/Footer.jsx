@@ -18,7 +18,7 @@ const footer = () => {
     <div className="links">
         <h3>Quick Links</h3>
  <ul>
-          <Link to='/'><li>Home</li></Link>
+          <Link to='/Booking-Hotels'><li>Home</li></Link>
           <Link to='/about-us'><li>About Us</li></Link>
           <Link to='/hotels'><li>Hotels</li></Link>      
              <Link to='/contact-us'><li>Contact</li></Link>   

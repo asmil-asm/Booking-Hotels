@@ -12,13 +12,13 @@ function App() {
     <div >
     <Header/>
     <Routes>
-      <Route path="/" element={<Home/>}/>
+      <Route path="/Booking-Hotels" element={<Home/>}/>
       <Route path="/about-us" element={<About/>}/>
       <Route path="/contact-us" element={<Contact/>}/>
       <Route path="/hotels" element={<Hotels/>}/>
       <Route path="/hotel/:id" element={<HotelData/>}/>
       
-    </Routes>
+    </Routes>/
     <Footer/>
     
     </div>

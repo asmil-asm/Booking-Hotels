@@ -21,7 +21,7 @@ const Header = () => {
     <h1>HotelLify</h1>
 </div>
  <ul className="full-screen">
-    <NavLink to={'/'}><li>Home</li></NavLink>
+    <NavLink to={'/Booking-Hotels'}><li>Home</li></NavLink>
     <NavLink to= {'/hotels'}><li>Hotels</li></NavLink>
     <NavLink to={'/about-us'}><li>About</li></NavLink>
     <NavLink to={'/contact-us'}><li>Contact</li></NavLink>
@@ -44,7 +44,7 @@ const Header = () => {
     <IoMdMenu onClick={handleMenu} className="menu"/>
    {menu&& <div className="list">
  <ul>
-    <NavLink to={'/'}><li>Home</li></NavLink>
+    <NavLink to={'/Booking-Hotels'}><li>Home</li></NavLink>
     <NavLink to= {'/hotels'}><li>Hotels</li></NavLink>
     <NavLink to={'/about-us'}><li>About</li></NavLink>
     <NavLink to={'/contact-us'}><li>Contact</li></NavLink>
