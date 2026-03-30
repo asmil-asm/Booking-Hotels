@@ -14,6 +14,9 @@ const Header = () => {
     const handleLanguage=(event)=>{
         setLnaguage(event.target.value)
     }
+    const handelSecroll=()=>{
+window.scrollTo(0, 0);         
+    }
   return (
 <header>
 <div className="logo">
@@ -21,10 +24,10 @@ const Header = () => {
     <h1>HotelLify</h1>
 </div>
  <ul className="full-screen">
-    <NavLink to={'/Booking-Hotels'}><li>Home</li></NavLink>
-    <NavLink to= {'/Booking-Hotels/hotels'}><li>Hotels</li></NavLink>
+    <NavLink   to={'/Booking-Hotels'}><li>Home</li></NavLink>
+    <NavLink  to= {'/Booking-Hotels/hotels'}><li>Hotels</li></NavLink>
     <NavLink to={'/Booking-Hotels/about-us'}><li>About</li></NavLink>
-    <NavLink to={'/Booking-Hotels/contact-us'}><li>Contact</li></NavLink>
+    <NavLink  to={'/Booking-Hotels/contact-us'}><li>Contact</li></NavLink>
 </ul>
 <div className='buttons'>
     <select value={language} onChange={handleLanguage}>
@@ -44,10 +47,22 @@ const Header = () => {
     <IoMdMenu onClick={handleMenu} className="menu"/>
    {menu&& <div className="list">
  <ul>
- <NavLink to={'/Booking-Hotels'}><li>Home</li></NavLink>
-    <NavLink to= {'/Booking-Hotels/hotels'}><li>Hotels</li></NavLink>
-    <NavLink to={'/Booking-Hotels/about-us'}><li>About</li></NavLink>
-    <NavLink to={'/Booking-Hotels/contact-us'}><li>Contact</li></NavLink>
+ <NavLink onClick={()=>{
+        handleMenu();
+        handelSecroll()
+    }} to={'/Booking-Hotels'}><li>Home</li></NavLink>
+    <NavLink onClick={()=>{
+        handleMenu();
+        handelSecroll()
+    }} to= {'/Booking-Hotels/hotels'}><li>Hotels</li></NavLink>
+    <NavLink onClick={()=>{
+        handleMenu();
+        handelSecroll()
+    }} to={'/Booking-Hotels/about-us'}><li>About</li></NavLink>
+    <NavLink onClick={()=>{
+        handleMenu();
+        handelSecroll()
+    }} to={'/Booking-Hotels/contact-us'}><li>Contact</li></NavLink>
 </ul>
 <div className="btns">
         <motion.button whileTap={{scale:0.8}}>Singin</motion.button>

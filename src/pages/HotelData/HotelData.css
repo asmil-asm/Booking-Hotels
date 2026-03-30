@@ -2,7 +2,7 @@
 
 .hotel-data{
 
-    @apply mt-[70px] mb-[-100px] p-5 w-full bg-[#EEEE] h-[2000px] relative
+    @apply mt-[70px] mb-[-100px] p-5 w-full bg-[#EEEE] relative
 }
  .hotel-data .search-hotels{
     @apply flex w-[50%] m-auto  items-center gap-2  mt-10  max-md:w-full

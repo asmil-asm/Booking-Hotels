@@ -34,10 +34,10 @@ setSearch(search)
     <input onChange={handelForm} name='destination' value={form.destination} className='destination' type="text" placeholder='Where are you going?' />
     <div className="info">
         <div className="data">
-         <label htmlFor="check-out" >Check-out</label>
+         <label htmlFor="check-in">Check-in</label>
         <br/>
-        <input onChange={handelForm}  value={form.checkout} id='check-out' type="date" name="check-out" />
-          <br/>
+        <input onChange={handelForm} value={form.checkin} id='check-in' type="date" name='check-in' />
+                   <br/>
            <label htmlFor="guests">Guests</label>
         <br/>
         <input onChange={handelForm} value={form.guest}  id='guests' type="number" min={1} name='guest' />
@@ -45,10 +45,11 @@ setSearch(search)
     </div>
     
     <div className="data">
-       <label htmlFor="check-in">Check-in</label>
+         <label htmlFor="check-out" >Check-out</label>
         <br/>
-        <input onChange={handelForm} value={form.checkin} id='check-in' type="date" name='check-in' />
-                   <br/>
+        <input onChange={handelForm}  value={form.checkout} id='check-out' type="date" name="check-out" />
+          <br/>
+      
          <label htmlFor="romms">Rooms</label>
         <br/>
         <input onChange={handelForm} value={form.rooms} name='rooms' id='romms' type="number" min={1}/>

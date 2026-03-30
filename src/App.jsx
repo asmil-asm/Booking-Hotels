@@ -17,7 +17,6 @@ function App() {
       <Route path="/Booking-Hotels/contact-us" element={<Contact/>}/>
       <Route path="/Booking-Hotels/hotels" element={<Hotels/>}/>
       <Route path="/Booking-Hotels/hotel/:id" element={<HotelData/>}/>
-      
     </Routes>
     <Footer/>
     

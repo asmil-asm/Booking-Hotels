@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 /* global */
 *{
     @apply box-border m-0 p-0
@@ -8,4 +9,8 @@ ul{
 }
 button{
     @apply cursor-pointer
+}
+input[type="radio"]
+{ 
+    @apply cursor-pointer outline-none bg-blue-950
 }

@@ -17,6 +17,11 @@ import Animaties3 from './assets/Hotels/Hotel1/Aminities3.webp'
 import Public1 from './assets/Hotels/Hotel1/Public1.webp'
 import Public2 from './assets/Hotels/Hotel1/Puplic2.webp'
 import Public3 from './assets/Hotels/Hotel1/Public3.webp'
+import Room_details1 from './assets/Rooms/Room1.avif'
+import Room_details2 from './assets/Rooms/Room2.avif'
+import Room_details3 from './assets/Rooms/Room3.avif'
+import Room_details4 from './assets/Rooms/Room4.avif'
+
 import { PiCoffeeBold } from "react-icons/pi";
 import { MdOutlineAddLocation } from "react-icons/md";
 import { LiaLuggageCartSolid } from "react-icons/lia";
@@ -28,6 +33,12 @@ import { FaParking } from "react-icons/fa";
 import { IoGolfOutline } from "react-icons/io5";
 import { IoCafe } from "react-icons/io5";
 import { LuHeater } from "react-icons/lu";
+import { MdOutlineBedroomParent } from "react-icons/md";
+import { IoPeopleSharp } from "react-icons/io5";
+import { MdOutlineKingBed } from "react-icons/md";
+
+
+
 
 
 
@@ -74,6 +85,7 @@ facilities:[
   {name:'Cafe',icons:<IoCafe/>}
 ],
 price:'$400',
+
 rate:5,
 description:`Located in the heart of Dubai's central Deira district, this luxury hotel offers free WiFi in all areas, comfortable, modern-style rooms and a rooftop pool. Guests can use the fitness center and sauna on site. All rooms feature warm décor and well-designed bathrooms with a bathtub and hairdryer. It features air conditioning, a flat-screen TV with satellite channels, a minibar as basic amenities, and a coffee maker. Guests can enjoy a swim in the rooftop pool at the  pool On the roof in Deira Dubai or work out in the fitness center which also offers a sauna.
 
@@ -91,7 +103,79 @@ publicImage: [Public1, Public2, Public3],
 Year:2018,
 phone:'+966-545050062',
 email:'Violethotel1@gmail.com',
-rooms:[1,1,1,1,1,1,1]
+rooms:[
+  {id:1,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:540,
+
+
+  },
+   {id:2,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:565,
+
+  },
+   {id:3,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+],
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:340,
+
+
+  }
+] 
     },
       {
          id:2,
@@ -145,8 +229,79 @@ publicImage: [Public1, Public2, Public3],},
 Year:2018,
 phone:'+966-545050062',
 email:'Violethotel1@gmail.com',
-rooms:[1,1,1,1,1,1,1]
-    },
+rooms:[
+  {id:1,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:540,
+
+
+  },
+   {id:2,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:565,
+
+  },
+   {id:3,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+],
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:340,
+
+
+  }
+]    },
       {
          id:3,
       name:'Heeton Concept Hotel - Kensington',
@@ -198,8 +353,79 @@ publicImage: [Public1, Public2, Public3],},
 Year:2018,
 phone:'+966-545050062',
 email:'Violethotel1@gmail.com',
-rooms:[1,1,1,1,1,1,1]
-    },
+rooms:[
+  {id:1,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:540,
+
+
+  },
+   {id:2,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:565,
+
+  },
+   {id:3,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+],
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:340,
+
+
+  }
+]    },
       {  id:4,
       name:'Heeton Concept Hotel - Kensington',
       location:'Hotel near Earls Court,London',
@@ -251,8 +477,79 @@ publicImage: [Public1, Public2, Public3],},
 Year:2018,
 phone:'+966-545050062',
 email:'Violethotel1@gmail.com',
-rooms:[1,1,1,1,1,1,1]
-    },
+rooms:[
+  {id:1,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:540,
+
+
+  },
+   {id:2,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:565,
+
+  },
+   {id:3,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+],
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:340,
+
+
+  }
+]    },
       {
          id:5,
       name:'Heeton Concept Hotel - Kensington',
@@ -304,8 +601,79 @@ publicImage: [Public1, Public2, Public3],},
 Year:2018,
 phone:'+966-545050062',
 email:'Violethotel1@gmail.com',
-rooms:[1,1,1,1,1,1,1]
-    },
+rooms:[
+  {id:1,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:540,
+
+
+  },
+   {id:2,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:565,
+
+  },
+   {id:3,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+],
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:340,
+
+
+  }
+]     },
       {
          id:6,
       name:'Heeton Concept Hotel - Kensington',
@@ -358,6 +726,77 @@ publicImage: [Public1, Public2, Public3],},
 Year:2018,
 phone:'+966-545050062',
 email:'Violethotel1@gmail.com',
-rooms:[1,1,1,1,1,1,1]
-    }
+rooms:[
+  {id:1,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:540,
+
+
+  },
+   {id:2,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+], 
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:565,
+
+  },
+   {id:3,
+images:[Room_details1,Room_details2,Room_details3,Room_details4],
+    title:'Junior Suite, 1 Queen Bed, City View',
+    rating:4,
+     facilities:[
+  {name:'Resturant', icons:<MdOutlineFoodBank/>},
+  {name:'Car park',icons:<FaParking/>},
+  {name:'Sauna',icons:<LuHeater/>},
+  {name:'Indoor Swimming Pool',icons:<FaSwimmingPool/>},
+  {name:'Fetnees Room',icons:<IoIosFitness/>},
+  {name:'Golf Course',icons:<IoGolfOutline/>},
+  {name:'Cafe',icons:<IoCafe/>}
+],
+     aminities:[
+
+      {name:' 2 bedrooms',icons:<MdOutlineBedroomParent/>},
+      {name:"Sleeps",icons:<IoPeopleSharp/>},
+      {name:'King Bed 3',icons:<MdOutlineKingBed/>}
+ ],
+  
+    price:340,
+
+
+  }
+]    }
   ]

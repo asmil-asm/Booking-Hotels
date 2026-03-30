@@ -5,7 +5,7 @@ import { CiSearch,CiLocationOn } from "react-icons/ci";
 import Imagemodel from '../../Component/Model-image/Imagemodel';
 import ModelreadMore from '../../Component/ModelreadMore/ModelreadMore';
 import { Usedata } from '../../Context/ContextComponent';
-
+import Rooms from '../../Component/Rooms-Details/Rooms';
 import './HotelData.css'
 const HotelData = () => {
 const {images,setImages,readMore,setReadMore}=Usedata()
@@ -96,6 +96,7 @@ const handelSee=()=>{
 <span onClick={handelSee}>see more</span>
     </div>
   </div>
+  <Rooms/>
   
 </div>
 

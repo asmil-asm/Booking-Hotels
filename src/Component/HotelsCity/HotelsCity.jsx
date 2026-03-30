@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Autoplay,Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import image1 from '../../assets/Cities/Dubai.jfif'
 import image2 from '../../assets/Cities/Istanbul.jfif'
@@ -35,7 +34,6 @@ const HotelsCity = () => {
       loop={true}
       pagination={{ clickable: true }}
     slidesPerView={3}
-          navigation
          speed={800}
          autoplay={{
             delay:2500,
